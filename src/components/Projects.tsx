@@ -22,7 +22,7 @@ const items = [
   {
     type: 'project',
     title: 'hackUMBC Website 2025',
-    image: '/hackumbc24.png',
+    image: '/hackumbc2025.png',
     description:
       'Revamped the hackUMBC website for the 2025 season with a custom organizer page, updated schedule, FAQ, and sponsor page. Built with Next.js, Tailwind CSS, and hosted on AWS.',
     skills: ['Next.js', 'JavaScript', 'Tailwind CSS', 'AWS'],
