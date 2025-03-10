@@ -16,7 +16,7 @@ const items = [
     skills: ['React', 'Tailwind CSS', 'AWS', 'AI Solutions'],
     links: {
       github: 'https://github.com/Nex-Sys-io/NexSys-Web',
-      // live: 'https://nexsys.io'
+      live: 'https://nexsys.netlify.app/'
     },
   },
   {
@@ -39,7 +39,7 @@ const items = [
       'A cloud-based AI-driven web application to automate Raman spectroscopy data processing, material classification, and spectral binning for remote sensing applications.',
     skills: ['AWS ECS', 'AWS Lambda', 'RDS', 'React'],
     links: {
-      // Add GitHub or live links if available
+      github: 'https://github.com/Nex-Sys-io/Bisyn_Algorithm',
     },
   },
   {
@@ -51,6 +51,7 @@ const items = [
     skills: ['Python', 'TensorFlow', 'Machine Learning'],
     links: {
       github: 'https://github.com/darshp623/ML_SignLanguage',
+      live: 'https://mlasl.netlify.app/',
     },
   },
   {
