@@ -58,7 +58,7 @@ const experiences = [
     company: 'hackUMBC',
     location: 'Baltimore, Maryland · Hybrid',
     period: 'Dec 2024 - Present · 4 mos',
-    image: '/hackUMBC2025.png',
+    image: '/hackumbc2025.png',
     description: [
       'Revamped the entire hackUMBC website for the 2025 season, implementing a custom organizer page, new backgrounds, updated schedule, FAQ, and sponsor page using JavaScript, and Tailwind on top of Next.js.',
       'Leading a team of 7 developers, ensuring efficient task delegation, providing technical guidance, and conducting workshops.',
