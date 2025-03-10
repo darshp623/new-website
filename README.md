@@ -1,4 +1,3 @@
-@ -1,87 +0,0 @@
 # Darsh Patel's Personal Website
 
 A modern, responsive personal portfolio website built with Next.js, React, TypeScript, and Tailwind CSS.
