@@ -1,0 +1,32 @@
+{
+  "name": "next-personal-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "framer-motion": "^12.4.10",
+    "next": "15.2.1",
+    "next-themes": "^0.4.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "20.17.24",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.1",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.8.2"
+  }
+}

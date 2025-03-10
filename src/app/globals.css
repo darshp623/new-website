@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #02040f;
+  --background-medium: #040a19;
+  --background-light: #03081b;
+  --foreground: #ffffff;
+  --primary: #00e1ff;
+  --primary-hover: #00c4dd;
+  --button-border: rgb(43, 182, 213);
+  --button-hover: rgb(0, 132, 255);
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to left, #02040f, #040a19, #03081b, #040a19, #02040f);
+  color: var(--foreground);
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+a {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+/* Fix for page transitions */
+main {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Special effect button styles */
+.btn-special {
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 0.75rem 1rem; /* Less tall */
+  border-radius: 2rem;
+  border: var(--button-border) 0.1rem solid;
+  z-index: 0;
+  color: black;
+  background: white;
+  min-width: 10rem; /* Wider */
+  text-align: center;
+  display: inline-block;
+}
+
+.btn-special::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.btn-special:hover::before {
+  top: 0;
+}
+
+.btn-special:hover {
+  background: var(--button-hover);
+  color: white;
+  border: 0.1rem solid white; /* Changed to white border on hover */
+  cursor: pointer;
+}
+
+/* Component styles */
+.section {
+  padding: 4rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  transition: all 300ms ease;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--background-dark);
+  border: 2px solid var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--background-dark);
+}
