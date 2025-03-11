@@ -17,7 +17,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-background-dark/30 pt-10 pb-6">
+    <footer className="bg-background-dark/20 pt-10 pb-6">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
           {/* Scroll to top */}

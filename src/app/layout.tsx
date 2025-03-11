@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { StarsBackground } from "../components/stars-background";
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700'],
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
 
 export const viewport = { width: 'device-width', initialScale: 1 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,9 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${poppins.className} antialiased`}>
+      <body className={`${poppins.className} antialiased relative`}>
+        <StarsBackground className="z-0" /> {/* Add the background */}
         <Navbar />
-        <main>
+        <main className="relative z-10"> {/* Ensure content is above background */}
           {children}
         </main>
         <Footer />

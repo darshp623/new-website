@@ -59,7 +59,7 @@ const getLevelColor = (level: Skill['level']) => {
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 md:py-32 bg-gradient-to-b from-background-dark to-background-medium/40">
+    <section id="skills" className="py-20 md:py-32 bg-background-dark/20">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div 
