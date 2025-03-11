@@ -6,7 +6,7 @@
   --background: #02040f;
   --background-medium: #040a19;
   --background-light: #03081b;
-  --foreground: #ffffff;
+  --foreground: #000000;
   --primary: #00e1ff;
   --primary-hover: #00c4dd;
   --button-border: rgb(43, 182, 213);
@@ -22,6 +22,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #03081b; /* or whatever color suits your design */
 }
 
 body {
