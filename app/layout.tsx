@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { StarsBackground } from "../components/stars-background";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { StarsBackground } from "./components/stars-background";
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700'],

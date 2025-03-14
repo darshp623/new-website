@@ -1,4 +1,4 @@
-import About from '@/components/About';
+import About from 'app/components/About';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

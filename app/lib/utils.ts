@@ -1,4 +1,4 @@
-// src/lib/utils.ts
+// lib/utils.ts
 
 /**
  * Utility function for conditionally joining class names.

@@ -1,4 +1,4 @@
-import Skills from '@/components/Skills';
+import Skills from 'app/components/Skills';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
