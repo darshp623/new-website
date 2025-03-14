@@ -58,30 +58,49 @@ const Contact = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
-            <p className="text-text-secondary mb-8 leading-relaxed">
-              Feel free to reach out! Whether you have a question, project inquiry, 
-              or just want to say hello, I'd love to hear from you.
-            </p>
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
+          <p className="text-text-secondary mb-8 leading-relaxed">
+            Feel free to reach out! Whether you have a question, project inquiry, or just want to say hello, I'd love to hear from you.
+          </p>
 
-            <div className="space-y-6">
-              <a href="mailto:darshp717@gmail.com" className="flex items-center group">
-                <div className="bg-primary/10 p-4 rounded-xl mr-4 group-hover:bg-primary/20 transition-all">
-                  <FiMail className="text-primary text-xl" />
-                </div>
-                <div>
-                  <h4 className="font-medium">Email</h4>
-                  <p className="text-text-secondary">darshp717@gmail.com</p>
-                </div>
-              </a>
-            </div>
-          </motion.div>
+          <div className="space-y-6">
+            <a href="mailto:darshp717@gmail.com" className="flex items-center group">
+              <div className="bg-primary/10 p-4 rounded-xl mr-4 group-hover:bg-primary/20 transition-all">
+                <FiMail className="text-primary text-xl" />
+              </div>
+              <div>
+                <h4 className="font-medium">Email</h4>
+                <p className="text-text-secondary">darshp717@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/darshp623/" target="_blank" rel="noopener noreferrer" className="flex items-center group">
+              <div className="bg-primary/10 p-4 rounded-xl mr-4 group-hover:bg-primary/20 transition-all">
+                <FiLinkedin className="text-primary text-xl" />
+              </div>
+              <div>
+                <h4 className="font-medium">LinkedIn</h4>
+                <p className="text-text-secondary">linkedin.com/in/darshp623</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/darshp623/" target="_blank" rel="noopener noreferrer" className="flex items-center group">
+              <div className="bg-primary/10 p-4 rounded-xl mr-4 group-hover:bg-primary/20 transition-all">
+                <FiGithub className="text-primary text-xl" />
+              </div>
+              <div>
+                <h4 className="font-medium">GitHub</h4>
+                <p className="text-text-secondary">github.com/darshp623</p>
+              </div>
+            </a>
+          </div>
+        </motion.div>
 
           {/* Contact Form */}
           <motion.div

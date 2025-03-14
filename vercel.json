@@ -1,0 +1,8 @@
+{
+    "build": {
+      "src": "src",
+      "outputDirectory": "dist",
+      "rootDirectory": "src"
+    }
+  }
+  
