@@ -16,7 +16,7 @@ const items = [
     skills: ['React', 'Tailwind CSS', 'AWS', 'AI Solutions'],
     links: {
       github: 'https://github.com/Nex-Sys-io/NexSys-Web',
-      live: 'https://nexsys.netlify.app/'
+      live: 'https://nexsystech.vercel.app/'
     },
   },
   {

@@ -82,8 +82,8 @@ const experiences = [
       'Developing a cloud-based AI-driven web application for Bisyn, leveraging AWS services (ECS, Lambda, RDS, S3) to automate Raman spectroscopy data processing, material classification, and spectral binning for remote sensing applications.'
     ],
     links: {
-      github: 'https://github.com/Nex-Sys-io/NexSys-Web',
-      repositories: 'https://github.com/orgs/Nex-Sys-io/repositories',
+      github: 'https://github.com/Nex-Sys-io/repositories',
+      repositories: 'https://nexsystech.vercel.app/',
     },
   },
 ];
