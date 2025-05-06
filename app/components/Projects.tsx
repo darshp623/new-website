@@ -10,13 +10,13 @@ const items = [
   {
     type: 'project',
     title: 'NexSys Web',
-    image: '/Nexsys.PNG', // update with your actual image
+    image: '/Nexsys.PNG',
     description:
       'AI-driven platform for NexSys Tech built with React and Tailwind CSS. Leverages AWS Cloud to automate workflows and optimize business tasks.',
     skills: ['React', 'Tailwind CSS', 'AWS', 'AI Solutions'],
     links: {
       github: 'https://github.com/Nex-Sys-io/NexSys-Web',
-      live: 'https://nexsystech.vercel.app/'
+      live: 'https://nex-sys.tech'
     },
   },
   {
@@ -34,7 +34,7 @@ const items = [
   {
     type: 'project',
     title: 'Bisyn AI Web App',
-    image: '/raman.png', // update with your actual image
+    image: '/raman.png',
     description:
       'A cloud-based AI-driven web application to automate Raman spectroscopy data processing, material classification, and spectral binning for remote sensing applications.',
     skills: ['AWS ECS', 'AWS Lambda', 'RDS', 'React'],
@@ -57,7 +57,7 @@ const items = [
   {
     type: 'project',
     title: 'NoteUs',
-    image: '/logo-icon.png', // update with your actual image
+    image: '/logo-icon.png',
     description:
       'A note-taking tool designed to organize and manage notes effectively, built with React and Next.js to boost productivity.',
     skills: ['React', 'Next.js', 'Tailwind CSS'],
@@ -84,7 +84,7 @@ const items = [
     image: '/cyberEssentials.png',
     description:
       'Completed certification in cybersecurity fundamentals, covering essential knowledge for securing digital systems and networks.',
-    issuer: 'CompTIA',
+    issuer: 'Cisco',
     date: 'January 2023',
     links: {
       verify:
