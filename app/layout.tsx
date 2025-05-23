@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { StarsBackground } from "./components/stars-background";
+import CursorTrail from "./components/CursorTrail";
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700'],
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${poppins.className} antialiased relative`}>
         <StarsBackground className="z-0" /> {/* Add the background */}
+        <CursorTrail />
         <Navbar />
         <main className="relative z-10"> {/* Ensure content is above background */}
           {children}
