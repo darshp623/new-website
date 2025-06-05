@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   keywords: "Darsh Patel, portfolio, web developer, computer science, UMBC",
   authors: [{ name: "Darsh Patel" }],
   icons: {
-    icon: "/profile-pic.PNG",
+    icon: "/darsh_pfp.png",
   },
 };
 

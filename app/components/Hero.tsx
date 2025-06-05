@@ -51,7 +51,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
           >
             <Link 
-              href="/resume.pdf" 
+              href="/resume-new.pdf" 
               target="_blank"
               className="btn-special"
             >
@@ -101,7 +101,7 @@ const Hero = () => {
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary">
             <Image
-              src="/profile-pic.PNG"
+              src="/darsh_pfp.png"
               alt="Darsh Patel"
               fill
               style={{ objectFit: 'cover' }}
