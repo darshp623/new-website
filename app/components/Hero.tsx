@@ -40,7 +40,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.7 }}
             className="text-text-secondary text-xl md:text-2xl mb-6"
           >
-            Computer Science Undergrad
+            SWE & CS Undergrad
           </motion.p>
           
           {/* Buttons */}
