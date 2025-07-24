@@ -1,8 +1,8 @@
 'use client';
 
-import { useEffect, useState, useRef, useCallback } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Code, Cpu, Terminal, Monitor, Cloud, GitBranch, Server, Database, Shield, Zap } from 'lucide-react';
+import { Code } from 'lucide-react';
 
 interface Note {
   id: number;
@@ -46,7 +46,6 @@ interface Wave {
 }
 
 export default function CursorTrail() {
-  const [musicNotes, setMusicNotes] = useState<Note[]>([]);
   const [particles, setParticles] = useState<Particle[]>([]);
   const [soundWaves, setSoundWaves] = useState<Wave[]>([]);
   const [isDesktop, setIsDesktop] = useState(true);
@@ -59,29 +58,14 @@ export default function CursorTrail() {
   const lastPos = useRef({ x: 0, y: 0 });
   const acceleration = useRef({ x: 0, y: 0 });
 
-  const noteId = useRef(0);
   const particleId = useRef(0);
   const waveId = useRef(0);
   
-  const MAX_NOTES = 12;
   const SMOOTHING_FACTOR = 0.92;
   const VELOCITY_DECAY = 0.95;
   const MAX_PARTICLES = 30;
   const MAX_WAVES = 4;
 
-  // tech icon array (all blue/cyan)
-  const techIcons = [
-    { icon: Code, color: '#38bdf8', size: 22 },
-    { icon: Cpu, color: '#0ea5e9', size: 20 },
-    { icon: Terminal, color: '#7dd3fc', size: 20 },
-    { icon: Monitor, color: '#38bdf8', size: 22 },
-    { icon: Cloud, color: '#0ea5e9', size: 20 },
-    { icon: GitBranch, color: '#7dd3fc', size: 18 },
-    { icon: Server, color: '#38bdf8', size: 22 },
-    { icon: Database, color: '#0ea5e9', size: 20 },
-    { icon: Shield, color: '#7dd3fc', size: 20 },
-    { icon: Zap, color: '#38bdf8', size: 18 },
-  ];
 
   // desktop detection
   useEffect(() => {
@@ -148,7 +132,8 @@ export default function CursorTrail() {
   useEffect(() => {
     let frameId: number;
     let time = 0;
-    
+
+      
     const loop = () => {
       if(isEnabled && isDesktop) {
         time += 0.016;
@@ -166,52 +151,6 @@ export default function CursorTrail() {
         
         const speed = Math.sqrt(velocity.current.x ** 2 + velocity.current.y ** 2);
         const accel = Math.sqrt(acceleration.current.x ** 2 + acceleration.current.y ** 2);
-        
-        // update tech icon trail
-        setMusicNotes(prev => {
-          const newNotes = [...prev];
-          
-          // add new note if enough distance moved or speed is high
-          const lastNote = newNotes[0];
-          if(!lastNote || 
-              Math.abs(displayPos.current.x - lastNote.x) > 8 || 
-              Math.abs(displayPos.current.y - lastNote.y) > 8 ||
-              speed > 5) {
-            
-            const randomIcon = techIcons[Math.floor(Math.random() * techIcons.length)];
-            const randomRotation = (Math.random() - 0.5) * 60; // -30 to 30 degrees
-            const randomScale = 0.8 + Math.random() * 0.4; // 0.8 to 1.2
-            
-            newNotes.unshift({
-              id: noteId.current++,
-              x: displayPos.current.x + (Math.random() - 0.5) * 20,
-              y: displayPos.current.y + (Math.random() - 0.5) * 20,
-              time: time,
-              speed: speed,
-              acceleration: accel,
-              velocity: { x: velocity.current.x, y: velocity.current.y },
-              icon: randomIcon.icon,
-              color: randomIcon.color,
-              size: randomIcon.size,
-              rotation: randomRotation,
-              scale: randomScale,
-              life: 1,
-              decay: 0.008 + Math.random() * 0.004
-            });
-          }
-          
-          // update existing notes
-          const updatedNotes = newNotes.map(note => ({
-            ...note,
-            life: note.life - note.decay,
-            scale: note.scale * 0.995, // slowly shrink
-            rotation: note.rotation + (note.speed * 0.5) // rotate based on speed
-          }));
-          
-          return updatedNotes
-            .filter(note => note.life > 0)
-            .slice(0, MAX_NOTES);
-        });
 
         // enhanced particle generation
         if(speed > 2) {
@@ -307,40 +246,6 @@ export default function CursorTrail() {
                 />
               ))}
             </svg>
-
-            {/* tech icon trail */}
-            {musicNotes.map(note => {
-              const IconComponent = note.icon;
-              return (
-                <motion.div
-                  key={note.id}
-                  className="absolute pointer-events-none"
-                  style={{
-                    left: note.x - note.size / 2,
-                    top: note.y - note.size / 2,
-                    opacity: note.life,
-                  }}
-                  animate={{
-                    scale: note.scale,
-                    rotate: note.rotation,
-                    y: [0, -10, -20],
-                  }}
-                  transition={{
-                    duration: 2,
-                    ease: "easeOut",
-                  }}
-                >
-                  <IconComponent
-                    size={note.size}
-                    color={note.color}
-                    className="drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]"
-                    style={{
-                      filter: `drop-shadow(0 0 6px ${note.color}40)`,
-                    }}
-                  />
-                </motion.div>
-              );
-            })}
 
             {/* enhanced particles with better physics */}
             {particles.map(particle => (
