@@ -51,7 +51,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
           >
             <Link 
-              href="/resume-new.pdf" 
+              href="/resume.pdf" 
               target="_blank"
               className="btn-special"
             >
