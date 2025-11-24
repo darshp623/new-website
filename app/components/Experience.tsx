@@ -8,30 +8,14 @@ import { useState } from 'react';
 
 const experiences = [
   {
-    title: 'Tech Team Organizer',
-    company: 'hackUMBC',
-    location: 'Baltimore, Maryland· Hybrid',
-    period: 'Mar 2024 - Dec 2024 · 10 mos',
-    image: '/hackUMBC24.png',
-    description: [
-      'Improved user retention by 50% by migrating hackUMBC.tech to Next.js and reworking front-end design using React, JavaScript, and Tailwind CSS.',
-      'Streamlined user data collection by integrating a type form with AWS DynamoDB and AWS S3, ensuring scalable and reliable service for over 500+ contestees.',
-      'Enhanced scalability and performance by 25% by hosting the website with AWS Amplify, achieving faster load times and improved reliability for dynamic content delivery.'
-    ],
-    links: {
-      website: 'https://hackumbc.tech',
-      github: 'https://github.com/umbchackers/hackumbc-web'
-    },
-  },
-  {
     title: 'Web Dev Intern',
     company: 'CHOYCES',
     location: 'Baltimore, Maryland · Remote',
     period: 'Sep 2024 - Nov 2024 · 3 mos',
     image: '/choyces.png',
     description: [
-      'Optimized the CHOYCES website using WordPress, JavaScript, and CSS to boost user engagement, increasing retention rates by 50%.',
-      'Conducted research on optimizing website viewports for mobile and tablet devices, implementing adjustments that led to a 35% improvement in user engagement through responsive design.'
+      'Optimized the CHOYCES website using WordPress, JavaScript, and CSS to improve visuals, and create a user-friendly design.',
+      'Conducted research on optimizing CHOYCES website viewports for mobile and tablet devices, implementing adjustments that led to praise from leadership.'
     ],
     links: {
       website: 'https://choyces.org',
@@ -44,9 +28,8 @@ const experiences = [
     period: 'Sep 2024 - Dec 2024 · 4 mos',
     image: '/umbc.jpg',
     description: [
-      'Undergraduate Researcher in Professor Roberto Yus Lab at the UMBC DAMS Research Group.',
-      'Developed Python scripts for advanced prompt engineering across multiple large language models (LLMs) to process, analyze, and generate precise summaries of thousands of privacy policies for the GenAIPABench project.',
-      'Designed a React-based website with a Firebase backend to store, categorize, and enable efficient search functionality for privacy policies, creating an interactive platform for presenting project findings.'
+      'Composed Python scripts for detailed prompt engineering, analyzing and summarizing thousands of privacy policies to evaluate the processing capabilities of large language models within the GenAIPABench project.',
+      'Built a small React-based interface connected to a Python backend to visualize policy scores and enable filtering/searching.'
     ],
     links: {
       github: 'https://github.com/darshp623/dams-research-proj',
@@ -54,15 +37,31 @@ const experiences = [
     },
   },
   {
-    title: 'Tech Team Lead',
+    title: 'Tech Team Organizer',
     company: 'hackUMBC',
     location: 'Baltimore, Maryland · Hybrid',
-    period: 'Dec 2024 - Present · 4 mos',
+    period: 'Apr 2024 - Dec 2024 · 9 mos',
+    image: '/hackUMBC24.png',
+    description: [
+      'Migrated hackUMBC.tech to Next.js and reworked front-end design using React, JavaScript, and Tailwind.',
+      'Streamlined user data collection by integrating a type form with AWS DynamoDB, and AWS S3, for over 500+ participants.',
+      'Deployed with AWS Amplify to allow secure, seamless updates.'
+    ],
+    links: {
+      website: 'https://hackumbc.tech',
+      github: 'https://github.com/umbchackers/hackumbc-web'
+    },
+  },
+  {
+    title: 'Technical Team Lead',
+    company: 'hackUMBC',
+    location: 'Baltimore, Maryland · Hybrid',
+    period: 'Mar 2024 - Oct 2025 · 1 yr 8 mos',
     image: '/hackumbc2025.png',
     description: [
-      'Revamped the entire hackUMBC website for the 2025 season, implementing a custom organizer page, new backgrounds, updated schedule, FAQ, and sponsor page using JavaScript, and Tailwind on top of Next.js.',
-      'Leading a team of 7 developers, ensuring efficient task delegation, providing technical guidance, and conducting workshops.',
-      'Overseeing the planning and development of a brand-new hackathon app built with React Native and an AWS-powered backend for seamless participant experience.'
+      'Led a team of 6 to rebuild hackUMBC.tech using React, Next.js, and Tailwind, improving stability, and redesigning the UI for 600+ participants.',
+      'Deployed AWS-backed registration tools (DynamoDB + S3) to handle resume storage and participant management at scale.',
+      'Coordinated cross-team communication, release cycles, and version control best practices for student developers.'
     ],
     links: {
       website: 'https://hackumbc.tech',
@@ -73,13 +72,12 @@ const experiences = [
     title: 'Software Engineer Intern',
     company: 'bwtech@UMBC',
     location: 'Baltimore, Maryland · On-site',
-    period: 'Dec 2024 - Present · 4 mos',
+    period: 'Oct 2024 - Oct 2025 · 1 yr',
     image: '/bwtech.png',
     description: [
-      'Working with Chris White at bwtech under the NexSys DBA to create AI solutions that automate workflows & optimize tasks for businesses.',
-      'Leveraged React and Tailwind CSS to create a sleek, user-friendly website for NexSys, ensuring an intuitive and engaging experience for end users.',
-      'Utilizing AWS Cloud to establish secure user groups and admin roles for multiple team members while building scalable infrastructure to host Product and Service landing zones.',
-      'Developing a cloud-based AI-driven web application for Bisyn, leveraging AWS services (ECS, Lambda, RDS, S3) to automate Raman spectroscopy data processing, material classification, and spectral binning for remote sensing applications.'
+      'Built cloud-hosted infrastructure for internal and client-facing apps using AWS Amplify, S3, CloudFront, Digital Ocean, and Route 53, ensuring secure team access via IAM roles and policies.',
+      'Developed an AI-assisted Raman spectroscopy processing platform for BISYN LLC, supporting classification, spectral binning, and automated workflows.',
+      'Worked directly with upper leadership to support product deployment, feature testing, and cloud integration.'
     ],
     links: {
       github: 'https://github.com/Nex-Sys-io/repositories',
@@ -89,7 +87,7 @@ const experiences = [
 ];
 
 export default function Experience() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(4);
 
   return (
     <section id="experience" className="py-20 md:py-32">
