@@ -75,7 +75,7 @@ const experiences = [
     period: 'Oct 2024 - Oct 2025 · 1 yr',
     image: '/bwtech.png',
     description: [
-      'Built cloud-hosted infrastructure for internal and client-facing apps using AWS Amplify, S3, CloudFront, Digital Ocean, and Route 53, ensuring secure team access via IAM roles and policies.',
+      'Built cloud-hosted infrastructure for internal and client-facing apps using AWS Amplify, S3, CloudFront, Route 53, and Digital Ocean, ensuring secure team access via IAM roles and policies.',
       'Developed an AI-assisted Raman spectroscopy processing platform for BISYN LLC, supporting classification, spectral binning, and automated workflows.',
       'Worked directly with upper leadership to support product deployment, feature testing, and cloud integration.'
     ],
