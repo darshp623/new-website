@@ -136,7 +136,7 @@ export default function Experience() {
                 >
                   {exp.period.split('·')[0]}
                 </div>
-                {/* Company + Role above the circle */}
+                {/* Company & Role above the circle */}
                 <div
                   className={`absolute -top-16 left-1/2 -translate-x-1/2 text-center ${
                     activeIndex === index ? 'text-primary' : 'text-text-secondary'
