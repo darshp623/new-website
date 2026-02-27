@@ -17,30 +17,26 @@ interface Skill {
   icon: React.ReactNode;
 }
 
-/**
- * Example updated skill sets. 
- * Feel free to rename categories or adjust skill items.
- */
 const skills: Record<string, Skill[]> = {
   'Languages & Tools': [
-    { name: 'JavaScript', level: 'Experienced', icon: <FiCode /> },
-    { name: 'TypeScript', level: 'Experienced', icon: <FiCode /> },
+    { name: 'JavaScript', level: 'Intermediate', icon: <FiCode /> },
+    { name: 'TypeScript', level: 'Intermediate', icon: <FiCode /> },
     { name: 'Python', level: 'Experienced', icon: <FiCode /> },
-    { name: 'C++', level: 'Experienced', icon: <FiCode /> },
-    { name: 'Java', level: 'Intermediate', icon: <FiCode /> },
+    { name: 'C++', level: 'Intermediate', icon: <FiCode /> },
+    { name: 'Java', level: 'Beginner', icon: <FiCode /> },
     { name: 'HTML/CSS', level: 'Experienced', icon: <FiLayout /> },
-    { name: 'mySQL', level: 'Intermediate', icon: <FiDatabase /> },
-    { name: 'postgresSQL', level: 'Intermediate', icon: <FiLayers /> },
+    { name: 'mySQL', level: 'Beginner', icon: <FiDatabase /> },
+    { name: 'postgresSQL', level: 'Beginner', icon: <FiLayers /> },
   ],
   'Frameworks & Cloud': [
-    { name: 'React', level: 'Experienced', icon: <FiCode /> },
-    { name: 'Next.js', level: 'Experienced', icon: <FiServer /> },
-    { name: 'React Native', level: 'Intermediate', icon: <FiLayout /> },
+    { name: 'React', level: 'Intermediate', icon: <FiCode /> },
+    { name: 'Next.js', level: 'Intermediate', icon: <FiServer /> },
+    { name: 'React Native', level: 'Beginner', icon: <FiLayout /> },
     { name: 'AWS Cloud', level: 'Experienced', icon: <FiGlobe /> },
-    { name: 'Cloud Computing', level: 'Experienced', icon: <FiGlobe /> },
+    { name: 'CloudFlare', level: 'Intermediate', icon: <FiGlobe /> },
     { name: 'Docker', level: 'Beginner', icon: <FiTool /> },
     { name: 'Digital Ocean', level: 'Beginner', icon: <FiServer /> },
-    { name: 'shadcn UI', level: 'Intermediate', icon: <FiLayout /> },
+    { name: 'Resend', level: 'Intermediate', icon: <FiLayout /> },
   ],
 };
 
@@ -61,7 +57,7 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 md:py-32 bg-background-dark/20">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
+        {/* section header */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +70,7 @@ const Skills = () => {
           <div className="w-16 h-1 bg-primary/50 mx-auto mt-4 rounded-full"></div>
         </motion.div>
 
-        {/* Skills Grid */}
+        {/* skills grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {Object.entries(skills).map(([category, skillList], categoryIndex) => (
             <motion.div
@@ -89,7 +85,7 @@ const Skills = () => {
                 {category}
               </h3>
 
-              {/* On mobile: single column, on sm: 2 columns */}
+              {/* single or 2 columns, depending on screen size */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {skillList.map((skill, skillIndex) => (
                   <motion.div
@@ -101,12 +97,12 @@ const Skills = () => {
                     whileHover={{ y: -3 }}
                     className="p-4 rounded-xl bg-background-dark/60 border border-primary/5 hover:border-primary/20 transition-all group flex items-start gap-3"
                   >
-                    {/* Icon container */}
+                    {/* icon container */}
                     <div className="bg-primary/10 p-3 rounded-lg group-hover:bg-primary/20 transition-all shrink-0">
                       {skill.icon}
                     </div>
 
-                    {/* Text area */}
+                    {/* text area */}
                     <div>
                       <h4 className="font-medium text-sm md:text-base">{skill.name}</h4>
                       <span 

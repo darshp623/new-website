@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-16 md:py-24">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        {/* Text Content */}
+        {/* text content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ const Hero = () => {
             SWE & CS Undergrad
           </motion.p>
           
-          {/* Buttons */}
+          {/* buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -66,7 +66,7 @@ const Hero = () => {
             </Link>
           </motion.div>
           
-          {/* Social Links */}
+          {/* social links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -92,7 +92,7 @@ const Hero = () => {
           </motion.div>
         </motion.div>
         
-        {/* Profile Image */}
+        {/* profile pic */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}

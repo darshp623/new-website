@@ -7,7 +7,7 @@ import React, {
   RefObject,
   useCallback,
 } from "react";
-
+// pulled from shadcn/ui's stars-background.tsx
 interface StarProps {
   x: number;
   y: number;

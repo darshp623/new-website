@@ -14,7 +14,7 @@ const experiences = [
     period: 'Sep 2024 - Nov 2024 · 3 mos',
     image: '/choyces.png',
     description: [
-      'Optimized the CHOYCES website using WordPress, JavaScript, and CSS to improve visuals, and create a user-friendly design.',
+      'Optimized the CHOYCES website using WordPress, HTML, and CSS to improve visuals, and create a user-friendly design.',
       'Conducted research on optimizing CHOYCES website viewports for mobile and tablet devices, implementing adjustments that led to praise from leadership.'
     ],
     links: {
@@ -40,7 +40,7 @@ const experiences = [
     title: 'Tech Team Organizer',
     company: 'hackUMBC',
     location: 'Baltimore, Maryland · Hybrid',
-    period: 'Apr 2024 - Dec 2024 · 9 mos',
+    period: 'Apr 2024 - Oct 2024 · 6 mos',
     image: '/hackUMBC24.png',
     description: [
       'Migrated hackUMBC.tech to Next.js and reworked front-end design using React, JavaScript, and Tailwind.',
@@ -56,7 +56,7 @@ const experiences = [
     title: 'Technical Team Lead',
     company: 'hackUMBC',
     location: 'Baltimore, Maryland · Hybrid',
-    period: 'Mar 2024 - Oct 2025 · 1 yr 8 mos',
+    period: 'Oct 2024 - Oct 2025 · 1 yr',
     image: '/hackumbc2025.png',
     description: [
       'Led a team of 6 to rebuild hackUMBC.tech using React, Next.js, and Tailwind, improving stability, and redesigning the UI for 600+ participants.',
@@ -105,9 +105,9 @@ export default function Experience() {
           <div className="w-16 h-1 bg-primary/50 mx-auto mt-4 rounded-full" />
         </motion.div>
 
-        {/* ===== Horizontal Timeline (Desktop) ===== */}
+        {/* horizontal timeline */}
         <div className="hidden md:block relative mb-12 mt-24">
-          {/* Horizontal line */}
+          {/* horizontal line */}
           <div className="absolute h-0.5 bg-primary/20 left-0 right-0 top-1/2 -translate-y-1/2" />
           <div className="flex justify-between relative">
             {experiences.map((exp, index) => (
@@ -120,7 +120,7 @@ export default function Experience() {
                 className="relative cursor-pointer"
                 onClick={() => setActiveIndex(index)}
               >
-                {/* Circle */}
+                {/* circle */}
                 <div
                   className={`w-6 h-6 rounded-full transition-all duration-300 ${
                     activeIndex === index
@@ -128,7 +128,7 @@ export default function Experience() {
                       : 'bg-background-dark border-2 border-primary/50 hover:border-primary'
                   }`}
                 />
-                {/* Period under the circle */}
+                {/* period under the circle */}
                 <div
                   className={`absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs ${
                     activeIndex === index ? 'text-primary' : 'text-text-secondary'
@@ -136,7 +136,7 @@ export default function Experience() {
                 >
                   {exp.period.split('·')[0]}
                 </div>
-                {/* Company & Role above the circle */}
+                {/* company & role above the circle */}
                 <div
                   className={`absolute -top-16 left-1/2 -translate-x-1/2 text-center ${
                     activeIndex === index ? 'text-primary' : 'text-text-secondary'
@@ -150,7 +150,7 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* ===== Vertical Timeline (Mobile) ===== */}
+        {/* vertical timeline, for mobile */}
         <div className="md:hidden relative mb-12 mt-12 flex flex-col items-start border-l border-primary/20 pl-6">
           {experiences.map((exp, index) => (
             <motion.div
@@ -171,7 +171,7 @@ export default function Experience() {
                 `}
               />
               
-              {/* Text Content */}
+              {/* text content */}
               <div className="ml-4">
                 <div className={`${activeIndex === index ? 'text-primary' : 'text-text-secondary'} font-bold`}>
                   {exp.company}
@@ -186,7 +186,7 @@ export default function Experience() {
         </div>
 
 
-        {/* ===== Active Experience Card ===== */}
+        {/* experience card */}
         <motion.div
           key={activeIndex}
           initial={{ opacity: 0, y: 20 }}
@@ -195,7 +195,7 @@ export default function Experience() {
           className="max-w-5xl mx-auto bg-background-dark/40 rounded-xl overflow-hidden border border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Image Container (Square) */}
+            {/* square image container */}
             <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src={experiences[activeIndex].image}
@@ -206,7 +206,6 @@ export default function Experience() {
               <div className="absolute inset-0 bg-gradient-to-t from-background-dark/70 to-transparent" />
             </div>
 
-            {/* Content Side */}
             <div className="p-6 flex flex-col">
               <div className="flex items-center mb-3">
                 <div className="bg-primary/10 p-2 rounded-full mr-3">
@@ -241,7 +240,7 @@ export default function Experience() {
             </ul>
 
               <div className="flex space-x-4 mt-auto">
-                {/* GitHub Link */}
+                {/* github Link */}
                 {experiences[activeIndex].links.github && (
                   <Link
                     href={experiences[activeIndex].links.github}
@@ -253,7 +252,7 @@ export default function Experience() {
                   </Link>
                 )}
 
-                {/* Additional Repositories Link */}
+                {/* additional repositories link */}
                 {experiences[activeIndex].links.repositories && (
                   <Link
                     href={experiences[activeIndex].links.repositories}
@@ -265,7 +264,7 @@ export default function Experience() {
                   </Link>
                 )}
 
-                {/* Website Link */}
+                {/* website link */}
                 {experiences[activeIndex].links.website && (
                   <Link
                     href={experiences[activeIndex].links.website}

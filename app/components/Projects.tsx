@@ -12,11 +12,11 @@ const items = [
     title: 'NexSys Web',
     image: '/Nexsys.PNG',
     description:
-      'AI-driven platform for NexSys Tech built with React and Tailwind CSS. Leverages AWS Cloud to automate workflows and optimize business tasks.',
+      'Website for NexSys Labs, built with React and Tailwind CSS, plus a contact form. Deployed using AWS Amplify, Route 53, & CloudFlare for DNS. Contact form uses Resend to send emails.',
     skills: ['React', 'Tailwind CSS', 'AWS', 'AI Solutions'],
     links: {
       github: 'https://github.com/Nex-Sys-io/NexSys-Web',
-      live: 'https://nex-sys.tech'
+      live: 'https://nexsys-labs.com/'
     },
   },
   {
@@ -47,7 +47,7 @@ const items = [
     title: 'ML Sign Language',
     image: '/asl-background.jpg',
     description:
-      'A machine learning project focusing on sign language recognition using advanced ML techniques to improve accessibility.',
+      'A machine learning project focusing on sign language recognition using a few python libarires to yield good results.',
     skills: ['Python', 'TensorFlow', 'Machine Learning'],
     links: {
       github: 'https://github.com/darshp623/ML_SignLanguage',
@@ -104,7 +104,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 md:py-32">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
+        {/* section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ const Projects = () => {
           <div className="w-16 h-1 bg-primary/50 mx-auto mt-4 rounded-full"></div>
         </motion.div>
 
-        {/* Filter Buttons */}
+        {/* filter buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -157,7 +157,7 @@ const Projects = () => {
           </button>
         </motion.div>
 
-        {/* Projects & Certifications Grid */}
+        {/* projects & certifications grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredItems.map((item, index) => (
             <motion.div
@@ -168,7 +168,7 @@ const Projects = () => {
               viewport={{ once: true }}
               className="bg-background-dark/40 rounded-xl overflow-hidden border border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 flex flex-col"
             >
-              {/* Image */}
+              {/* image */}
               <div className="relative h-48 overflow-hidden">
                 <Image
                   src={item.image}
@@ -183,7 +183,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Content */}
+              {/* content */}
               <div className="p-6 flex-1 flex flex-col">
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                 <p className="text-text-secondary text-sm mb-4 flex-1">

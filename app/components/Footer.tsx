@@ -20,7 +20,7 @@ const Footer = () => {
     <footer className="relative z-20 bg-background-dark/20 pt-10 pb-6">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
-          {/* Scroll to top */}
+          {/* scroll to top */}
           <motion.button 
             onClick={scrollToTop}
             className="bg-primary/10 hover:bg-primary/20 p-3 rounded-full mb-8 text-primary transition-all duration-300"
@@ -31,7 +31,7 @@ const Footer = () => {
             <FiArrowUp size={24} />
           </motion.button>
 
-          {/* Navigation */}
+          {/* navigation */}
           <nav className="mb-8">
             <ul className="flex flex-wrap justify-center gap-6 md:gap-12">
               {navItems.map((item) => (
@@ -47,10 +47,10 @@ const Footer = () => {
             </ul>
           </nav>
 
-          {/* Divider */}
+          {/* divider */}
           <div className="w-24 h-1 bg-primary/30 rounded-full mb-6"></div>
 
-          {/* Copyright */}
+          {/* copyright */}
           <p className="text-text-secondary text-sm text-center">
             Copyright &copy; {currentYear} Darsh Patel. All Rights Reserved.
           </p>

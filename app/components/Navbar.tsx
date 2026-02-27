@@ -48,7 +48,7 @@ const Navbar = () => {
           </motion.span>
         </Link>
 
-        {/* Desktop Navigation */}
+        {/* desktop nav */}
         <nav className="hidden md:flex space-x-8">
           {navItems.map((item, index) => (
             <motion.div
@@ -67,7 +67,7 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* mobile menu button */}
         <button 
           className="md:hidden text-text-primary focus:outline-none" 
           onClick={toggleMenu}
@@ -77,7 +77,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* mobile menu */}
       <motion.div 
         className={`md:hidden fixed top-[60px] right-0 h-screen w-[70%] bg-background-dark/95 backdrop-blur-md z-40 transition-all duration-300`}
         initial={{ x: '100%' }}
@@ -104,7 +104,7 @@ const Navbar = () => {
         </div>
       </motion.div>
       
-      {/* Overlay */}
+      {/* overlay */}
       {isOpen && (
         <motion.div 
           initial={{ opacity: 0 }}
