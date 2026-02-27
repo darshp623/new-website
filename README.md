@@ -1,16 +1,12 @@
 # Darsh Patel's Personal Website
 
-A modern, responsive personal portfolio website built with Next.js, React, TypeScript, and Tailwind CSS.
+A modern personal portfolio website built with Next.js, React, TypeScript, and Tailwind CSS. Also, Resend, for the Contact Form.
 
 ## Features
 
-- 🚀 Built with Next.js 14 and React
-- 💎 Styled with Tailwind CSS
-- 🎨 Beautiful animations with Framer Motion
-- 📱 Fully responsive design
-- 🌙 Modern UI design with a dark theme
-- ⚡ Fast performance
-- 📊 SEO optimized
+- Built with Next.js 14 and React
+- Styled with Tailwind CSS
+- Animations with Framer Motion
 
 ## Sections
 
@@ -82,6 +78,6 @@ npm run start
   /styles            # Global styles
 ```
 
-## Credits
+## Rights
 
-This website was created by Darsh Patel, updated from a previous HTML/CSS personal portfolio.
+This website was created by ME (Darsh Patel), updated from a previous HTML/CSS personal portfolio.
