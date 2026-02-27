@@ -13,7 +13,7 @@ const items = [
     image: '/Nexsys.PNG',
     description:
       'Website for NexSys Labs, built with React and Tailwind CSS, plus a contact form. Deployed using AWS Amplify, Route 53, & CloudFlare for DNS. Contact form uses Resend to send emails.',
-    skills: ['React', 'Tailwind CSS', 'AWS', 'AI Solutions'],
+    skills: ['React', 'Tailwind CSS', 'AWS', 'CloudFlare'],
     links: {
       github: 'https://github.com/Nex-Sys-io/NexSys-Web',
       live: 'https://nexsys-labs.com/'
@@ -21,13 +21,13 @@ const items = [
   },
   {
     type: 'project',
-    title: 'hackUMBC Website 2025',
+    title: 'hackUMBC Website',
     image: '/hackumbc2025.png',
     description:
-      'Revamped the hackUMBC website for the 2025 season with a custom organizer page, updated schedule, FAQ, and sponsor page. Built with Next.js, Tailwind CSS, and hosted on AWS.',
+      'Created & maintained the hackUMBC website from 2024-2026, as a centralized information hub for the hackathon. Also has as a detailed registration form. Integrated DynamoDB and S3 for participant data, & resume storage.',
     skills: ['Next.js', 'JavaScript', 'Tailwind CSS', 'AWS'],
     links: {
-      github: 'https://github.com/umbchackers/hackumbc-web',
+      github: 'https://github.com/darshp623/hackumbc-web',
       live: 'https://hackumbc.tech',
     },
   },
@@ -36,15 +36,12 @@ const items = [
     title: 'Bisyn AI Web App',
     image: '/raman.png',
     description:
-      'A cloud-based AI-driven web application to automate Raman spectroscopy data processing, material classification, and spectral binning for remote sensing applications.',
-    skills: ['AWS ECS', 'AWS Lambda', 'RDS', 'React'],
-    links: {
-      github: 'https://github.com/Nex-Sys-io/Bisyn_Algorithm',
-    },
+      'A cloud-based AI-driven web application to automate Raman spectroscopy data processing, material classification, and spectral binning for remote sensing applications. No links due to NDA.',
+    skills: ['React', 'S3', 'Python', 'Digital Ocean'],
   },
   {
     type: 'project',
-    title: 'ML Sign Language',
+    title: 'ML Sign Language Proj',
     image: '/asl-background.jpg',
     description:
       'A machine learning project focusing on sign language recognition using a few python libarires to yield good results.',
@@ -59,7 +56,7 @@ const items = [
     title: 'NoteUs',
     image: '/logo-icon.png',
     description:
-      'A note-taking tool designed to organize and manage notes effectively, built with React and Next.js to boost productivity.',
+      'A note-taking tool designed to organize and manage notes effectively, built with React and Next.js.',
     skills: ['React', 'Next.js', 'Tailwind CSS'],
     links: {
       github: 'https://github.com/darshp623/NoteUs',
@@ -198,7 +195,7 @@ const Projects = () => {
                     ))}
                 </div>
                 <div className="flex space-x-4">
-                  {item.links.github && (
+                  {item.links?.github && (
                     <Link
                       href={item.links.github}
                       target="_blank"
@@ -208,7 +205,7 @@ const Projects = () => {
                       <FiGithub size={20} />
                     </Link>
                   )}
-                  {item.links.live && (
+                  {item.links?.live && (
                     <Link
                       href={item.links.live}
                       target="_blank"
@@ -218,7 +215,7 @@ const Projects = () => {
                       <FiExternalLink size={20} />
                     </Link>
                   )}
-                  {item.links.verify && (
+                  {item.links?.verify && (
                     <Link
                       href={item.links.verify}
                       target="_blank"
