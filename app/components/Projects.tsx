@@ -12,11 +12,11 @@ const items = [
     title: 'NexSys Web',
     image: '/Nexsys.PNG',
     description:
-      'Website for NexSys Labs, built with React and Tailwind CSS, plus a contact form. Deployed using AWS Amplify, Route 53, & CloudFlare for DNS. Contact form uses Resend to send emails.',
+      'Website for NexSys Labs, to the point I worked on it, built with React and Tailwind CSS, plus a contact form. Deployed using AWS Amplify, Route 53, & CloudFlare for DNS. Contact form uses Resend to send emails.',
     skills: ['React', 'Tailwind CSS', 'AWS', 'CloudFlare'],
     links: {
-      github: 'https://github.com/Nex-Sys-io/NexSys-Web',
-      live: 'https://nexsys-labs.com/'
+      github: 'https://github.com/darshp623/NexSys-Web',
+      live: 'https://nexsyslabs.vercel.app/'
     },
   },
   {
@@ -24,11 +24,11 @@ const items = [
     title: 'hackUMBC Website',
     image: '/hackumbc2025.png',
     description:
-      'Created & maintained the hackUMBC website from 2024-2026, as a centralized information hub for the hackathon. Also has as a detailed registration form. Integrated DynamoDB and S3 for participant data, & resume storage.',
+      'Created & maintained the hackUMBC website from Aug 2024-Oct 2025, as a centralized information hub for the hackathon. Also has as a detailed registration form. Integrated DynamoDB and S3 for participant data, & resume storage.',
     skills: ['Next.js', 'JavaScript', 'Tailwind CSS', 'AWS'],
     links: {
       github: 'https://github.com/darshp623/hackumbc-web',
-      live: 'https://hackumbc.tech',
+      live: 'https://hackumbc.vercel.app',
     },
   },
   {
