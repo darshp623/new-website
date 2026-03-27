@@ -19,24 +19,24 @@ interface Skill {
 
 const skills: Record<string, Skill[]> = {
   'Languages & Tools': [
-    { name: 'JavaScript', level: 'Intermediate', icon: <FiCode /> },
-    { name: 'TypeScript', level: 'Intermediate', icon: <FiCode /> },
     { name: 'Python', level: 'Experienced', icon: <FiCode /> },
+    { name: 'C#', level: 'Intermediate', icon: <FiCode /> },
+    { name: 'mySQL', level: 'Intermediate', icon: <FiCode /> },
+    { name: 'HTML/CSS', level: 'Intermediate', icon: <FiLayout /> },
+    { name: 'JavaScript', level: 'Intermediate', icon: <FiCode /> },
     { name: 'C++', level: 'Intermediate', icon: <FiCode /> },
-    { name: 'Java', level: 'Beginner', icon: <FiCode /> },
-    { name: 'HTML/CSS', level: 'Experienced', icon: <FiLayout /> },
-    { name: 'mySQL', level: 'Beginner', icon: <FiDatabase /> },
-    { name: 'postgresSQL', level: 'Beginner', icon: <FiLayers /> },
+    { name: 'TypeScript', level: 'Intermediate', icon: <FiLayers /> },
+    { name: 'Java', level: 'Beginner', icon: <FiDatabase /> },
   ],
   'Frameworks & Cloud': [
+    { name: 'AWS Cloud', level: 'Experienced', icon: <FiGlobe /> },
     { name: 'React', level: 'Intermediate', icon: <FiCode /> },
     { name: 'Next.js', level: 'Intermediate', icon: <FiServer /> },
-    { name: 'React Native', level: 'Beginner', icon: <FiLayout /> },
-    { name: 'AWS Cloud', level: 'Experienced', icon: <FiGlobe /> },
     { name: 'CloudFlare', level: 'Intermediate', icon: <FiGlobe /> },
+    { name: 'Resend', level: 'Intermediate', icon: <FiLayout /> },
+    { name: 'React Native', level: 'Beginner', icon: <FiLayout /> },
     { name: 'Docker', level: 'Beginner', icon: <FiTool /> },
     { name: 'Digital Ocean', level: 'Beginner', icon: <FiServer /> },
-    { name: 'Resend', level: 'Intermediate', icon: <FiLayout /> },
   ],
 };
 
