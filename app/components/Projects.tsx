@@ -41,6 +41,17 @@ const items = [
   },
   {
     type: 'project',
+    title: 'TaskTracker',
+    image: '/task.jpg',
+    description:
+      'A task managementconsole app built with C# and MySQL, supporting full CRUD operations with secure, parameterized database queries.',
+    skills: ['C#', '.NET', 'MySQL', 'Git'],
+    links: {
+      github: 'https://github.com/darshp623/TaskTracker',
+    },
+  },
+  {
+    type: 'project',
     title: 'ML Sign Language Proj',
     image: '/asl-background.jpg',
     description:
