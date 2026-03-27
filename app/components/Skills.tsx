@@ -21,7 +21,7 @@ const skills: Record<string, Skill[]> = {
   'Languages & Tools': [
     { name: 'Python', level: 'Experienced', icon: <FiCode /> },
     { name: 'C#', level: 'Intermediate', icon: <FiCode /> },
-    { name: 'mySQL', level: 'Intermediate', icon: <FiCode /> },
+    { name: 'MySQL', level: 'Intermediate', icon: <FiCode /> },
     { name: 'HTML/CSS', level: 'Intermediate', icon: <FiLayout /> },
     { name: 'JavaScript', level: 'Intermediate', icon: <FiCode /> },
     { name: 'C++', level: 'Intermediate', icon: <FiCode /> },
