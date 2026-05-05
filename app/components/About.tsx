@@ -97,8 +97,8 @@ const About = () => {
                 with a focused track in AI/Machine Learning, with Cum Laude honors.
               </p>
               <p className="text-text-primary leading-relaxed">
-                After graduating from UMBC on May 21st, I accepted an offer to start as a remote Full-Time
-                Software Engineer at Unison on June 8th. I am also an AWS Certified Cloud Practitioner,
+                After graduating from UMBC on May 21st, I accepted an offer to start on June 8th as a remote 
+                Full-Time Software Engineer at Unison. I am also an AWS Certified Cloud Practitioner,
                 and overall I have a strong passion for building impactful web and software experiences.
               </p>
             </motion.div>
