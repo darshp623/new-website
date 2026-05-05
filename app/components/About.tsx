@@ -76,10 +76,11 @@ const About = () => {
               >
                 <div className="flex items-center mb-3">
                   <FiAward className="text-primary text-2xl mr-3" />
-                  <h3 className="text-lg font-medium">Education</h3>
+                  <h3 className="text-lg font-medium">Job</h3>
                 </div>
-                <p className="font-medium">High School Diploma</p>
-                <p className="text-text-secondary text-sm mb-1">Eastern Technical High School</p>
+                <p className="font-medium">Software Engineer</p>
+                <p className="text-text-secondary text-sm mb-1">(Start June 8th)</p>
+                <p className="text-text-secondary text-sm">Unison</p>
               </motion.div>
             </div>
 
@@ -91,15 +92,14 @@ const About = () => {
               viewport={{ once: true }}
             >
               <p className="text-text-primary mb-4 leading-relaxed">
-                I am a current junior at the University of Maryland, Baltimore County. 
-                Currently, I am pursuing my Bachelor's of Science in Computer Science,
-                and I am focusing my track on AI/Machine Learning.
+                I am a current senior at the University of Maryland, Baltimore County. 
+                On May 21st 2026, I will *hopefully* be graduating with a Bachelor's of Science in Computer Science,
+                with a focused track in AI/Machine Learning, with Cum Laude honors.
               </p>
               <p className="text-text-primary leading-relaxed">
-                I have other passions in web and app design, as well as a thirst for knowledge, 
-                as shown by my multiple internships, one as a Software Engineer at bwtech, 
-                in addition to my work at hackUMBC as the Tech Team Lead, as well as being an 
-                AWS Certified Cloud Practitioner.
+                After graduating from UMBC on May 21st, I accepted an offer to start as a remote Full-Time
+                Software Engineer at Unison on June 8th. I am also an AWS Certified Cloud Practitioner,
+                and overall I have a strong passion for building impactful web and software experiences.
               </p>
             </motion.div>
           </motion.div>
