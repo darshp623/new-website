@@ -80,14 +80,31 @@ const experiences = [
       'Worked directly with upper leadership to support product deployment, feature testing, and cloud integration.'
     ],
     links: {
-      github: 'https://github.com/Nex-Sys-io/repositories',
-      repositories: 'https://nexsystech.vercel.app/',
+      website: 'https://nexsystech.vercel.app/',
+      github: 'https://github.com/darshp623/NexSys-Web',
+    },
+  },
+  {
+    title: 'Software Engineer',
+    company: 'Unison',
+    location: 'McLean, Virginia · Remote',
+    period: 'Apr 2026 - Present · 1 mos',
+    image: '/unison.jpg',
+    description: [
+      'Joining Bidscale Team at Unison as a remote Full-Time Software Engineer!',
+      'Starting June 8th, stay tuned!!! :D',
+    ],
+    links: {
+      website: 'https://unisonglobal.com',
     },
   },
 ];
 
 export default function Experience() {
-  const [activeIndex, setActiveIndex] = useState(4);
+  const defaultExperienceIndex = experiences.findIndex((exp) =>
+    exp.company.toLowerCase().includes('unison')
+  );
+  const [activeIndex, setActiveIndex] = useState(defaultExperienceIndex === -1 ? 0 : defaultExperienceIndex);
 
   return (
     <section id="experience" className="py-20 md:py-32">
@@ -232,7 +249,7 @@ export default function Experience() {
               {experiences[activeIndex].description.map((item, idx) => (
                 <li key={idx} className="flex items-start">
                   <span className="text-primary mr-2 mt-1">•</span>
-                  <p className={`text-text-primary ${experiences[activeIndex].company.toLowerCase().includes('bwtech') ? 'text-sm' : 'text-base'}`}>
+                  <p className={`text-text-primary ${experiences[activeIndex].company.toLowerCase().includes('Unison') ? 'text-sm' : 'text-base'}`}>
                     {item}
                   </p>
                 </li>
@@ -251,19 +268,6 @@ export default function Experience() {
                     <FiGithub size={20} />
                   </Link>
                 )}
-
-                {/* additional repositories link */}
-                {experiences[activeIndex].links.repositories && (
-                  <Link
-                    href={experiences[activeIndex].links.repositories}
-                    target="_blank"
-                    className="bg-background-dark/60 hover:bg-primary/20 p-2 rounded-full text-text-primary hover:text-primary transition-all"
-                    aria-label="Repositories"
-                  >
-                    <FiExternalLink size={20} />
-                  </Link>
-                )}
-
                 {/* website link */}
                 {experiences[activeIndex].links.website && (
                   <Link
