@@ -247,9 +247,9 @@ export default function Experience() {
 
               <ul className="space-y-2 mb-6">
               {experiences[activeIndex].description.map((item, idx) => (
-                <li key={idx} className="flex items-start">
-                  <span className="text-primary mr-2 mt-1">•</span>
-                  <p className={`text-text-primary ${experiences[activeIndex].company.toLowerCase().includes('Unison') ? 'text-sm' : 'text-base'}`}>
+                <li key={idx} className="grid grid-cols-[auto_1fr] items-start gap-2">
+                  <span className="text-primary leading-6">•</span>
+                  <p className="text-text-primary text-base leading-relaxed">
                     {item}
                   </p>
                 </li>
