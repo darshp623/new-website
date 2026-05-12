@@ -218,6 +218,7 @@ export default function Experience() {
                 src={experiences[activeIndex].image}
                 alt={`${experiences[activeIndex].company} logo`}
                 fill
+                sizes="(min-width: 1024px) 512px, (min-width: 768px) 50vw, 100vw"
                 className="absolute inset-0 object-cover transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background-dark/70 to-transparent" />

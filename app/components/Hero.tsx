@@ -104,6 +104,7 @@ const Hero = () => {
               src="/darsh_pfp.png"
               alt="Darsh Patel"
               fill
+              sizes="(min-width: 768px) 20rem, 16rem"
               style={{ objectFit: 'cover' }}
               priority
             />

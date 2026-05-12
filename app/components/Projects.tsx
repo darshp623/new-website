@@ -182,6 +182,7 @@ const Projects = () => {
                   src={item.image}
                   alt={item.title}
                   fill
+                  sizes="(min-width: 1280px) 384px, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   style={{ objectFit: 'cover' }}
                   className="transition-transform duration-500 hover:scale-105"
                 />

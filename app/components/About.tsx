@@ -35,6 +35,7 @@ const About = () => {
                 src="/darsh.jpg"
                 alt="Darsh Patel"
                 fill
+                sizes="(min-width: 768px) 20rem, 16rem"
                 style={{ objectFit: 'cover' }}
                 className="hover:scale-105 transition-transform duration-500"
               />
